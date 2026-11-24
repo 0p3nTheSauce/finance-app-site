@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finance – personal receipts app</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; color: #222; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #ddd; background: #161616; } a { color: #8ab4f8; } }
+</style>
+</head>
+<body>
+<h1>Finance</h1>
+<p>Finance is a private, self-hosted app that one person uses to keep track of their own
+grocery spending. It is not offered to the public and has no sign-up.</p>
+<h2>What it does</h2>
+<ul>
+  <li>Reads emailed till slips (PDF receipts) from the owner's own Gmail, using a label the
+      owner set up, and turns them into line items.</li>
+  <li>Lets the owner mark which items were shared with a housemate.</li>
+  <li>Writes one summary row per receipt into a Google Sheet the owner shares with that
+      housemate.</li>
+</ul>
+<h2>Google data it uses</h2>
+<ul>
+  <li><code>gmail.readonly</code>: to find and download receipt attachments. It never sends,
+      changes or deletes email.</li>
+  <li><code>spreadsheets</code>: to add rows to the owner's grocery sheet.</li>
+</ul>
+<p>See the <a href="privacy.html">privacy policy</a>.</p>
+</body>
+</html>
